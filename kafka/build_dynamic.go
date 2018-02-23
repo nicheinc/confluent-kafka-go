@@ -3,6 +3,6 @@
 
 package kafka
 
-// #cgo pkg-config: rdkafka
-// #cgo LDFLAGS: -lrdkafka
+// #cgo CFLAGS: -I${SRCDIR}/clib/include
+// #cgo LDFLAGS: -L${SRCDIR}/clib/lib -lrdkafka
 import "C"
